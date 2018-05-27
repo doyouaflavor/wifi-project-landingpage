@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>無家者合作互助網</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class='top-nav'>
+        <a href="">Home</a>
+        <a href="">Subscribe</a>
+    </nav>
+    <nav class=".social-media-icons social-media-icons-fixed">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+    </nav>
+    <section>
+        <div class="content">
+                <p>connection to homeless</p>
+                <h1>無家者
+                    ​合作互助網</h1>
+                <h3>智邦科技 X 人生百味</h3>
+                <button class="black-button">開始上網</button>
+        </div>
+        <canvas id='canvas'/>
+    </section>
+    <section>
+        <div id="map"></div>        
+    </section>
+    <div class='description-container'>
+        <section>
+            <div class="content">
+                    <h2 class='description-title'>關於無家者合作互助網</h2>
+                    <p>
+                        大台北區域因為貧窮或其他原因居無定所，在公園、天橋底、地下道及住宅後樓梯
+                        等地棲身的人，目前估計總人數超過700人，統稱無家者。
+
+                        無家者是社會整體貧窮的縮影，許多人因為意外失去工作與家庭，許多人從社會掉
+                        落街頭，便在監獄、醫院與街頭不斷流轉，難以回到社會重拾支持系統，協助無家
+                        者回到就是在城市裡建立保護網，接住有需要的人，保護在這個城市每一個潛在的無家者。
+                            
+                        8成的無家者有工作，卻難以「重回」社會。協助無家者脫離居無定所，不僅是提
+                        供工作與收入，更需社群歸屬、安全感等支持。
+                    </p>
+                    <h3>​一起關注這個計畫，改變都市貧困者的生活</h3>    
+                    <div class="email-input">
+                        <input type="text" class="email-input" placeholder="Email address..."/>
+                        <button>Subscribe Now</button>
+                    </div>
+                        
+                    <nav class="social-media-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></i></a>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                    </nav>
+            </div>
+        </section>
+            <iframe id='vd2' width="560" height="315" 
+                src="https://www.youtube.com/embed/FG-h26AnMHg?rel=0&amp;controls=0&amp;showinfo=0&loop=1
+                &playlist=FG-h26AnMHg&autoplay=1&mute=1" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+            ></iframe>
+            <footer>
+                    <button>
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                    </button>
+                    © 2018 By 人生百味
+            </footer>
+    </div>
+    <iframe id='vd1' width="560" height="315" 
+        src="https://www.youtube.com/embed/T6KnVAUub2U?rel=0&amp;controls=0&amp;showinfo=0&loop=1
+        &playlist=T6KnVAUub2U&autoplay=1&mute=1" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+    ></iframe>
+    <script>
+        function initMap() {
+        var latLng = {lat: 25.040393, lng: 121.500068};
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 19,
+            center: latLng
+          });
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            title: '街頭服務隊基地'
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevbD_pEl4lQL6CK2lPdG6Z4yWNC0ynx4&callback=initMap">
+      </script>
+    <script src="./js/drawClock.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+​
+
+
+
+
+​
